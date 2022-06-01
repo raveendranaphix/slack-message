@@ -6,12 +6,15 @@ $notices = array();
 // Add your post message hook
 define('HOOK', '');
 
+// Add your channel
+define('CHANNEL', '#general');
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 $settings = [
     'username'     => 'incoming-webhook',
-    'channel'      => '#general',
     'reponse_type' => 'in_channel',
+    'channel'      => CHANNEL,
     'link_names'   => true
 ];
 
